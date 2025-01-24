@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["deno.ns", "deno.window"],
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "tasks": {
+    "start": {
+      "command": "deno run --allow-net src/app.ts",
+      "desc": "Run the application"
+    }
+  },
+  "permissions": {
+    "net": true
+  }
+}
