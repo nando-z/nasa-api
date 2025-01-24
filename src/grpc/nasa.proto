@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package nasa;
+
+service NasaService {
+  rpc GetNasaData (NasaRequest) returns (NasaResponse);
+}
+
+message NasaRequest {
+  string query = 1;
+}
+
+message NasaResponse {
+  string data = 1;
+}
