@@ -8,5 +8,5 @@ export function setRoutes(app) {
     app.use('/api/nasa', router);
     router.get('/', indexController.getHome);
     router.get('/data', indexController.getData);
-    // Add more routes as needed
+    router.get('/data/:id', indexController.getDataById);
 }
